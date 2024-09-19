@@ -1,252 +1,252 @@
 [
-  {
-    "state": "Alabama",
-    "abbreviation": "AL",
-    "percentage": 47
-  },
-  {
-    "state": "Alaska",
-    "abbreviation": "AK",
-    "percentage": 18
-  },
-  {
-    "state": "Arizona",
-    "abbreviation": "AZ",
-    "percentage": 63
-  },
-  {
-    "state": "Arkansas",
-    "abbreviation": "AR",
-    "percentage": 73
-  },
-  {
-    "state": "California",
-    "abbreviation": "CA",
-    "percentage": 88
-  },
-  {
-    "state": "Colorado",
-    "abbreviation": "CO",
-    "percentage": 54
-  },
-  {
-    "state": "Connecticut",
-    "abbreviation": "CT",
-    "percentage": 65
-  },
-  {
-    "state": "Delaware",
-    "abbreviation": "DE",
-    "percentage": 42
-  },
-  {
-    "state": "Florida",
-    "abbreviation": "FL",
-    "percentage": 79
-  },
-  {
-    "state": "Georgia",
-    "abbreviation": "GA",
-    "percentage": 55
-  },
-  {
-    "state": "Hawaii",
-    "abbreviation": "HI",
-    "percentage": 72
-  },
-  {
-    "state": "Idaho",
-    "abbreviation": "ID",
-    "percentage": 49
-  },
-  {
-    "state": "Illinois",
-    "abbreviation": "IL",
-    "percentage": 60
-  },
-  {
-    "state": "Indiana",
-    "abbreviation": "IN",
-    "percentage": 53
-  },
-  {
-    "state": "Iowa",
-    "abbreviation": "IA",
-    "percentage": 66
-  },
-  {
-    "state": "Kansas",
-    "abbreviation": "KS",
-    "percentage": 50
-  },
-  {
-    "state": "Kentucky",
-    "abbreviation": "KY",
-    "percentage": 39
-  },
-  {
-    "state": "Louisiana",
-    "abbreviation": "LA",
-    "percentage": 55
-  },
-  {
-    "state": "Maine",
-    "abbreviation": "ME",
-    "percentage": 81
-  },
-  {
-    "state": "Maryland",
-    "abbreviation": "MD",
-    "percentage": 68
-  },
-  {
-    "state": "Massachusetts",
-    "abbreviation": "MA",
-    "percentage": 90
-  },
-  {
-    "state": "Michigan",
-    "abbreviation": "MI",
-    "percentage": 70
-  },
-  {
-    "state": "Minnesota",
-    "abbreviation": "MN",
-    "percentage": 75
-  },
-  {
-    "state": "Mississippi",
-    "abbreviation": "MS",
-    "percentage": 33
-  },
-  {
-    "state": "Missouri",
-    "abbreviation": "MO",
-    "percentage": 62
-  },
-  {
-    "state": "Montana",
-    "abbreviation": "MT",
-    "percentage": 44
-  },
-  {
-    "state": "Nebraska",
-    "abbreviation": "NE",
-    "percentage": 58
-  },
-  {
-    "state": "Nevada",
-    "abbreviation": "NV",
-    "percentage": 85
-  },
-  {
-    "state": "New Hampshire",
-    "abbreviation": "NH",
-    "percentage": 77
-  },
-  {
-    "state": "New Jersey",
-    "abbreviation": "NJ",
-    "percentage": 71
-  },
-  {
-    "state": "New Mexico",
-    "abbreviation": "NM",
-    "percentage": 50
-  },
-  {
-    "state": "New York",
-    "abbreviation": "NY",
-    "percentage": 95
-  },
-  {
-    "state": "North Carolina",
-    "abbreviation": "NC",
-    "percentage": 56
-  },
-  {
-    "state": "North Dakota",
-    "abbreviation": "ND",
-    "percentage": 65
-  },
-  {
-    "state": "Ohio",
-    "abbreviation": "OH",
-    "percentage": 64
-  },
-  {
-    "state": "Oklahoma",
-    "abbreviation": "OK",
-    "percentage": 59
-  },
-  {
-    "state": "Oregon",
-    "abbreviation": "OR",
-    "percentage": 80
-  },
-  {
-    "state": "Pennsylvania",
-    "abbreviation": "PA",
-    "percentage": 45
-  },
-  {
-    "state": "Rhode Island",
-    "abbreviation": "RI",
-    "percentage": 69
-  },
-  {
-    "state": "South Carolina",
-    "abbreviation": "SC",
-    "percentage": 66
-  },
-  {
-    "state": "South Dakota",
-    "abbreviation": "SD",
-    "percentage": 62
-  },
-  {
-    "state": "Tennessee",
-    "abbreviation": "TN",
-    "percentage": 77
-  },
-  {
-    "state": "Texas",
-    "abbreviation": "TX",
-    "percentage": 85
-  },
-  {
-    "state": "Utah",
-    "abbreviation": "UT",
-    "percentage": 70
-  },
-  {
-    "state": "Vermont",
-    "abbreviation": "VT",
-    "percentage": 75
-  },
-  {
-    "state": "Virginia",
-    "abbreviation": "VA",
-    "percentage": 88
-  },
-  {
-    "state": "Washington",
-    "abbreviation": "WA",
-    "percentage": 90
-  },
-  {
-    "state": "West Virginia",
-    "abbreviation": "WV",
-    "percentage": 30
-  },
-  {
-    "state": "Wisconsin",
-    "abbreviation": "WI",
-    "percentage": 65
-  },
-  {
-    "state": "Wyoming",
-    "abbreviation": "WY",
-    "percentage": 58
-  }
+    {
+        "state": "Alabama",
+        "abbreviation": "AL",
+        "percentage": 18
+    },
+    {
+        "state": "Alaska",
+        "abbreviation": "AK",
+        "percentage": 18
+    },
+    {
+        "state": "Arizona",
+        "abbreviation": "AZ",
+        "percentage": 33
+    },
+    {
+        "state": "Arkansas",
+        "abbreviation": "AR",
+        "percentage": 23
+    },
+    {
+        "state": "California",
+        "abbreviation": "CA",
+        "percentage": 48
+    },
+    {
+        "state": "Colorado",
+        "abbreviation": "CO",
+        "percentage": 14
+    },
+    {
+        "state": "Connecticut",
+        "abbreviation": "CT",
+        "percentage": 45
+    },
+    {
+        "state": "Delaware",
+        "abbreviation": "DE",
+        "percentage": 42
+    },
+    {
+        "state": "Florida",
+        "abbreviation": "FL",
+        "percentage": 49
+    },
+    {
+        "state": "Georgia",
+        "abbreviation": "GA",
+        "percentage": 55
+    },
+    {
+        "state": "Hawaii",
+        "abbreviation": "HI",
+        "percentage": 72
+    },
+    {
+        "state": "Idaho",
+        "abbreviation": "ID",
+        "percentage": 29
+    },
+    {
+        "state": "Illinois",
+        "abbreviation": "IL",
+        "percentage": 30
+    },
+    {
+        "state": "Indiana",
+        "abbreviation": "IN",
+        "percentage": 23
+    },
+    {
+        "state": "Iowa",
+        "abbreviation": "IA",
+        "percentage": 36
+    },
+    {
+        "state": "Kansas",
+        "abbreviation": "KS",
+        "percentage": 50
+    },
+    {
+        "state": "Kentucky",
+        "abbreviation": "KY",
+        "percentage": 39
+    },
+    {
+        "state": "Louisiana",
+        "abbreviation": "LA",
+        "percentage": 0
+    },
+    {
+        "state": "Maine",
+        "abbreviation": "ME",
+        "percentage": 0
+    },
+    {
+        "state": "Maryland",
+        "abbreviation": "MD",
+        "percentage": 18
+    },
+    {
+        "state": "Massachusetts",
+        "abbreviation": "MA",
+        "percentage": 90
+    },
+    {
+        "state": "Michigan",
+        "abbreviation": "MI",
+        "percentage": 70
+    },
+    {
+        "state": "Minnesota",
+        "abbreviation": "MN",
+        "percentage": 75
+    },
+    {
+        "state": "Mississippi",
+        "abbreviation": "MS",
+        "percentage": 33
+    },
+    {
+        "state": "Missouri",
+        "abbreviation": "MO",
+        "percentage": 22
+    },
+    {
+        "state": "Montana",
+        "abbreviation": "MT",
+        "percentage": 64
+    },
+    {
+        "state": "Nebraska",
+        "abbreviation": "NE",
+        "percentage": 28
+    },
+    {
+        "state": "Nevada",
+        "abbreviation": "NV",
+        "percentage": 45
+    },
+    {
+        "state": "New Hampshire",
+        "abbreviation": "NH",
+        "percentage": 77
+    },
+    {
+        "state": "New Jersey",
+        "abbreviation": "NJ",
+        "percentage": 51
+    },
+    {
+        "state": "New Mexico",
+        "abbreviation": "NM",
+        "percentage": 40
+    },
+    {
+        "state": "New York",
+        "abbreviation": "NY",
+        "percentage": 95
+    },
+    {
+        "state": "North Carolina",
+        "abbreviation": "NC",
+        "percentage": 46
+    },
+    {
+        "state": "North Dakota",
+        "abbreviation": "ND",
+        "percentage": 55
+    },
+    {
+        "state": "Ohio",
+        "abbreviation": "OH",
+        "percentage": 34
+    },
+    {
+        "state": "Oklahoma",
+        "abbreviation": "OK",
+        "percentage": 59
+    },
+    {
+        "state": "Oregon",
+        "abbreviation": "OR",
+        "percentage": 20
+    },
+    {
+        "state": "Pennsylvania",
+        "abbreviation": "PA",
+        "percentage": 45
+    },
+    {
+        "state": "Rhode Island",
+        "abbreviation": "RI",
+        "percentage": 69
+    },
+    {
+        "state": "South Carolina",
+        "abbreviation": "SC",
+        "percentage": 66
+    },
+    {
+        "state": "South Dakota",
+        "abbreviation": "SD",
+        "percentage": 62
+    },
+    {
+        "state": "Tennessee",
+        "abbreviation": "TN",
+        "percentage": 77
+    },
+    {
+        "state": "Texas",
+        "abbreviation": "TX",
+        "percentage": 85
+    },
+    {
+        "state": "Utah",
+        "abbreviation": "UT",
+        "percentage": 70
+    },
+    {
+        "state": "Vermont",
+        "abbreviation": "VT",
+        "percentage": 75
+    },
+    {
+        "state": "Virginia",
+        "abbreviation": "VA",
+        "percentage": 88
+    },
+    {
+        "state": "Washington",
+        "abbreviation": "WA",
+        "percentage": 90
+    },
+    {
+        "state": "West Virginia",
+        "abbreviation": "WV",
+        "percentage": 30
+    },
+    {
+        "state": "Wisconsin",
+        "abbreviation": "WI",
+        "percentage": 65
+    },
+    {
+        "state": "Wyoming",
+        "abbreviation": "WY",
+        "percentage": 58
+    }
 ]
