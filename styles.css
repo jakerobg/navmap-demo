@@ -36,11 +36,12 @@
 }
 
 .state {
-    transition: filter 0.3s ease; /* Smooth transition */
+    transition: filter 0.2s ease; /* Smooth transition */
 }
 
 .state:hover {
-    filter: brightness(1.2); /* Brighten the state on hover */
+    filter: brightness(1.1) /* Brighten the state on hover */
+        drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
 }
 
 .tooltip {
