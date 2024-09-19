@@ -28,7 +28,6 @@
 .outer-container {
     max-height: auto;
     width: 1100px;
-    border: 2px solid #000; /* Border around the SVG */
     padding: 10px;
 }
 
