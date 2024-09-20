@@ -2,27 +2,27 @@
     {
         "state": "Alabama",
         "abbreviation": "AL",
-        "percentage": 18
+        "percentage": 5
     },
     {
         "state": "Alaska",
         "abbreviation": "AK",
-        "percentage": 18
+        "percentage": 1
     },
     {
         "state": "Arizona",
         "abbreviation": "AZ",
-        "percentage": 33
+        "percentage": 30
     },
     {
         "state": "Arkansas",
         "abbreviation": "AR",
-        "percentage": 23
+        "percentage": 50
     },
     {
         "state": "California",
         "abbreviation": "CA",
-        "percentage": 48
+        "percentage": 23
     },
     {
         "state": "Colorado",
@@ -37,27 +37,27 @@
     {
         "state": "Delaware",
         "abbreviation": "DE",
-        "percentage": 42
+        "percentage": 20
     },
     {
         "state": "Florida",
         "abbreviation": "FL",
-        "percentage": 49
+        "percentage": 14
     },
     {
         "state": "Georgia",
         "abbreviation": "GA",
-        "percentage": 55
+        "percentage": 25
     },
     {
         "state": "Hawaii",
         "abbreviation": "HI",
-        "percentage": 72
+        "percentage": 82
     },
     {
         "state": "Idaho",
         "abbreviation": "ID",
-        "percentage": 29
+        "percentage": 19
     },
     {
         "state": "Illinois",
@@ -72,12 +72,12 @@
     {
         "state": "Iowa",
         "abbreviation": "IA",
-        "percentage": 36
+        "percentage": 26
     },
     {
         "state": "Kansas",
         "abbreviation": "KS",
-        "percentage": 50
+        "percentage": 10
     },
     {
         "state": "Kentucky",
@@ -112,7 +112,7 @@
     {
         "state": "Minnesota",
         "abbreviation": "MN",
-        "percentage": 75
+        "percentage": 35
     },
     {
         "state": "Mississippi",
@@ -142,17 +142,17 @@
     {
         "state": "New Hampshire",
         "abbreviation": "NH",
-        "percentage": 77
+        "percentage": 97
     },
     {
         "state": "New Jersey",
         "abbreviation": "NJ",
-        "percentage": 51
+        "percentage": 21
     },
     {
         "state": "New Mexico",
         "abbreviation": "NM",
-        "percentage": 40
+        "percentage": 5
     },
     {
         "state": "New York",
