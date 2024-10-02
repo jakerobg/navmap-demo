@@ -1,7 +1,7 @@
 //floating tooltip
 const tooltip = document.getElementById("tooltip");
 
-//storing state data json as local var when reload to avoid async functions
+//storing state data
 const stateData = [];
 
 /**
@@ -12,6 +12,24 @@ function percentageToColor(percentage) {
     const diffGreen = Math.round(252 + (104 - 249) * percentage * 0.01);
     const diffBlue = Math.round(252 + (154 - 249) * percentage * 0.01);
     return `rgb(${diffRed}, ${diffGreen}, ${diffBlue})`;
+}
+
+async function loadData() {
+    loadStats();
+    stateFill();
+}
+
+async function loadStats() {
+    fetch("stats.json")
+        .then((response) => response.json())
+        .then((data) => {
+            document.getElementById("jurisdictions").textContent =
+                data.jurisdictions;
+            document.getElementById("completion").textContent = data.completion;
+            document.getElementById("pages").textContent = data.pages;
+            document.getElementById("analysts").textContent = data.analysts;
+        })
+        .catch((error) => console.error("Error fetching:", error));
 }
 
 /**
