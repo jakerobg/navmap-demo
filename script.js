@@ -1,5 +1,7 @@
 //floating tooltip
 const tooltip = document.getElementById("tooltip");
+const tooltipLabel = document.getElementById("tooltip-label");
+const tooltipStats = document.getElementById("tooltip-stats");
 
 //storing state data
 const stateData = [];
@@ -27,7 +29,7 @@ async function loadStats() {
                 data.jurisdictions;
             document.getElementById("completion").textContent = data.completion;
             document.getElementById("pages").textContent = data.pages;
-            document.getElementById("analysts").textContent = data.analysts;
+            document.getElementById("population").textContent = data.population;
         })
         .catch((error) => console.error("Error fetching:", error));
 }
@@ -57,6 +59,8 @@ async function stateFill() {
                     state: state.state,
                     abbreviation: state.abbreviation,
                     percentage: state.percentage,
+                    published_jurisdictions: state.published_jurisdictions,
+                    total_jurisdictions: state.total_jurisdictions,
                 });
             });
         })
@@ -83,8 +87,10 @@ function getState(abb) {
 document.querySelectorAll("svg path").forEach((path) => {
     path.addEventListener("mouseenter", (event) => {
         const state = getState(event.target.getAttribute("id"));
-        tooltip.textContent = `${state.state}: ${state.percentage}% published`;
+        tooltipLabel.textContent = `${state.state}:`;
+        tooltipStats.textContent = `${state.published_jurisdictions}/${state.total_jurisdictions} published (${state.percentage}%)`;
         tooltip.style.display = "block"; // Show tooltip
+        tooltipLabel.style.display = "flex";
     });
 
     path.addEventListener("mousemove", (event) => {
