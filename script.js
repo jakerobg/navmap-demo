@@ -16,24 +16,6 @@ function percentageToColor(percentage) {
     return `rgb(${diffRed}, ${diffGreen}, ${diffBlue})`;
 }
 
-async function loadData() {
-    loadStats();
-    stateFill();
-}
-
-async function loadStats() {
-    fetch("stats.json")
-        .then((response) => response.json())
-        .then((data) => {
-            document.getElementById("jurisdictions").textContent =
-                data.jurisdictions;
-            document.getElementById("completion").textContent = data.completion;
-            document.getElementById("pages").textContent = data.pages;
-            document.getElementById("population").textContent = data.population;
-        })
-        .catch((error) => console.error("Error fetching:", error));
-}
-
 /**
  * fills each state based on percentage AND stores in state data
  */
@@ -69,10 +51,11 @@ async function stateFill() {
         });
 }
 
+//SEARCHES STATE DATA FOR MATCHING STATE (slow but works)
 function getState(abb) {
     var returnState = {
-        state: "idk",
-        abbreviation: "idk",
+        state: "",
+        abbreviation: "",
         percentage: 0,
     };
     stateData.forEach((state) => {
@@ -84,6 +67,7 @@ function getState(abb) {
     return returnState;
 }
 
+//TOOLTIP
 document.querySelectorAll("svg path").forEach((path) => {
     path.addEventListener("mouseenter", (event) => {
         const state = getState(event.target.getAttribute("id"));
