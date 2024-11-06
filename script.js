@@ -20,7 +20,8 @@ function percentageToColor(percentage) {
  * fills each state based on percentage AND stores in state data
  */
 async function stateFill() {
-    fetch("stateProgress.json")
+    const url = "https://edit.zoningatlas.org/atlas/status/summary/state/";
+    fetch(url)
         .then((response) => {
             if (!response.ok) {
                 throw new Error("Network response was not ok");
@@ -55,8 +56,8 @@ async function stateFill() {
 function getState(abb) {
     var returnState = {
         state: "",
-        abbreviation: "",
         percentage: 0,
+        abbreviation: "",
     };
     stateData.forEach((state) => {
         if (state.abbreviation == abb) {
@@ -73,8 +74,9 @@ document.querySelectorAll("svg path").forEach((path) => {
         const state = getState(event.target.getAttribute("id"));
         tooltipLabel.textContent = `${state.state}:`;
         tooltipStats.textContent = `${state.published_jurisdictions}/${state.total_jurisdictions} published (${state.percentage}%)`;
-        tooltip.style.display = "block"; // Show tooltip
-        tooltipLabel.style.display = "flex";
+        tooltip.style.display = "block";
+        tooltipLabel.style.display = "block";
+        tooltipStats.style.display = "flex";
     });
 
     path.addEventListener("mousemove", (event) => {
