@@ -455,7 +455,7 @@ document.querySelectorAll("svg path").forEach((path) => {
         }
 
         // Prevent tooltip from going off the bottom of the screen
-        if (tooltipY + tooltip.offsetHeight > window.innerHeight / 1.5) {
+        if (tooltipY + tooltip.offsetHeight > window.innerHeight) {
             tooltipY = event.pageY - tooltip.offsetHeight - offsetY;
         }
 
