@@ -439,13 +439,31 @@ document.querySelectorAll("svg path").forEach((path) => {
         tooltipLabel.textContent = `${state.state}:`;
         tooltipStats.textContent = `${state.published_jurisdictions}/${state.total_jurisdictions} published (${state.percentage}%)`;
         tooltip.style.display = "block";
-        tooltipLabel.style.display = "block";
-        tooltipStats.style.display = "flex";
     });
 
     path.addEventListener("mousemove", (event) => {
-        tooltip.style.left = event.pageX + 10 + "px"; //next to cursor
-        tooltip.style.top = event.pageY + 10 + "px";
+        const offsetX = 10; // Distance from the cursor
+        const offsetY = 10; // Distance from the cursor
+
+        // Calculate tooltip position
+        let tooltipX = event.pageX + offsetX;
+        let tooltipY = event.pageY + offsetY;
+
+        // Prevent tooltip from going off the right side of the screen
+        if (tooltipX + tooltip.offsetWidth > window.innerWidth) {
+            tooltipX = event.pageX - tooltip.offsetWidth - offsetX;
+        }
+
+        // Prevent tooltip from going off the bottom of the screen
+        if (tooltipY + tooltip.offsetHeight > window.innerHeight / 1.5) {
+            tooltipY = event.pageY - tooltip.offsetHeight - offsetY;
+        }
+
+        // Set the new position
+        tooltip.style.left = tooltipX + "px";
+        tooltip.style.top = tooltipY + "px";
+
+        tooltip.style.display = "block";
     });
 
     path.addEventListener("mouseleave", () => {

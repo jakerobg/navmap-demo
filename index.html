@@ -14,8 +14,11 @@
     </head>
     <body onload="stateFillAlt()">
         <div class="map-title">Click on a state to learn more</div>
-
-        <div class="map-container">
+        <div
+            class="map-container"
+            id="map-container"
+            style="border: 2px solid #000"
+        >
             <!--
             <div class="legend">
                 <div class="legend-title" style="padding-bottom: 10px">
@@ -491,7 +494,6 @@
             <div class="tooltip-label" id="tooltip-label"></div>
             <div class="tooltip-stats" id="tooltip-stats"></div>
         </div>
-        <!-- Tooltip element -->
     </body>
     <script src="script.js"></script>
 </html>
