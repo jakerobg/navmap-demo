@@ -434,28 +434,42 @@ function getState(abb) {
 
 //TOOLTIP
 document.querySelectorAll("svg path").forEach((path) => {
-    path.addEventListener("mouseenter", (event) => {
-        const state = getState(event.target.getAttribute("id"));
-        tooltipLabel.textContent = `${state.state}:`;
-        tooltipStats.textContent = `${state.published_jurisdictions}/${state.total_jurisdictions} published (${state.percentage}%)`;
-        tooltip.style.display = "block";
-    });
+    if (window.innerWidth <= 1000) {
+        path.addEventListener("mouseenter", (event) => {
+            const state = getState(event.target.getAttribute("id"));
+            tooltipLabel.textContent = `${state.state}:`;
+            tooltipStats.textContent = `${state.published_jurisdictions}/${state.total_jurisdictions} published (${state.percentage}%)`;
+
+            const rect = event.target.getBoundingClientRect();
+            tooltip.style.left = rect.left + window.scrollX + "px";
+            tooltip.style.top =
+                rect.top + window.scrollY + rect.height + 5 + "px"; // Position below the state
+            tooltip.style.display = "block";
+        });
+    } else {
+        path.addEventListener("mouseenter", (event) => {
+            const state = getState(event.target.getAttribute("id"));
+            tooltipLabel.textContent = `${state.state}:`;
+            tooltipStats.textContent = `${state.published_jurisdictions}/${state.total_jurisdictions} published (${state.percentage}%)`;
+            tooltip.style.display = "block";
+        });
+    }
 
     path.addEventListener("mousemove", (event) => {
         const offsetX = 10; // Distance from the cursor
         const offsetY = 10; // Distance from the cursor
 
-        // Calculate tooltip position
+        // tooltip pos
         let tooltipX = event.pageX + offsetX;
         let tooltipY = event.pageY + offsetY;
 
-        // Prevent tooltip from going off the right side of the screen
-        if (tooltipX + tooltip.offsetWidth > window.innerWidth) {
+        // right side of the screen
+        if (tooltipX + tooltip.offsetWidth > window.innerWidth - 20) {
             tooltipX = event.pageX - tooltip.offsetWidth - offsetX;
         }
 
-        // Prevent tooltip from going off the bottom of the screen
-        if (tooltipY + tooltip.offsetHeight > window.innerHeight) {
+        // bottom of the screen
+        if (tooltipY + tooltip.offsetHeight > window.innerHeight - 10) {
             tooltipY = event.pageY - tooltip.offsetHeight - offsetY;
         }
 
