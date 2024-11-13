@@ -81,26 +81,13 @@ function getState(abb) {
 
 //TOOLTIP
 document.querySelectorAll("svg path").forEach((path) => {
-    if (window.innerWidth <= 1000) {
-        path.addEventListener("mouseenter", (event) => {
-            const state = getState(event.target.getAttribute("id"));
-            tooltipLabel.textContent = `${state.state}:`;
-            tooltipStats.textContent = `${state.published_jurisdictions}/${state.total_jurisdictions} published (${state.percentage}%)`;
+    path.addEventListener("mouseenter", (event) => {
+        const state = getState(event.target.getAttribute("id"));
+        tooltipLabel.textContent = `${state.state}:`;
+        tooltipStats.textContent = `${state.published_jurisdictions}/${state.total_jurisdictions} published (${state.percentage}%)`;
 
-            const rect = event.target.getBoundingClientRect();
-            tooltip.style.left = rect.left + window.scrollX + "px";
-            tooltip.style.top =
-                rect.top + window.scrollY + rect.height + 5 + "px"; // Position below the state
-            tooltip.style.display = "block";
-        });
-    } else {
-        path.addEventListener("mouseenter", (event) => {
-            const state = getState(event.target.getAttribute("id"));
-            tooltipLabel.textContent = `${state.state}:`;
-            tooltipStats.textContent = `${state.published_jurisdictions}/${state.total_jurisdictions} published (${state.percentage}%)`;
-            tooltip.style.display = "block";
-        });
-    }
+        tooltip.style.display = "block";
+    });
 
     path.addEventListener("mousemove", (event) => {
         const offsetX = 10; // Distance from the cursor
